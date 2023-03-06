@@ -11,13 +11,7 @@ class Person {
 	public String getName(){
 		return name;
 	}
-	public int getAge(){
-		return age;
-	}
 
-	public void setName(String name){
-		this.name=name;
-	}
 
 	public void setAge(int age){
 		this.age=age;
@@ -27,7 +21,7 @@ class Person {
 class Student extends Person 
 	
 
-	public void study(String name){
+	public void study(String name,int age){
 		Student student=new Student();
 		String name=student.setName(name);
 		System.out.println(name+""+"is studying");
@@ -35,7 +29,8 @@ class Student extends Person
 }
 
 class Teacher extends Person {
-	public void teach(String name){
+	
+	public void teach(String name,int age){
 		Teacher t=new Teacher();
 		String name=t.setName(name);
 		System.out.println(name+""+"is teaching");
